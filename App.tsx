@@ -1,19 +1,18 @@
 import "expo-dev-client";
-import "@formatjs/intl-locale/polyfill";
-import "@formatjs/intl-listformat/polyfill";
-import "@formatjs/intl-listformat/locale-data/en";
 
-import { SafeAreaProvider } from "react-native-safe-area-context";
-
-import { RootNavigationContainer } from "#app/navigation/RootNavigationContainer";
-import { RootNavigator } from "#app/navigation/RootNavigator";
+import { Text, View } from "react-native";
 
 export default function App() {
   return (
-    <SafeAreaProvider>
-      <RootNavigationContainer>
-        <RootNavigator />
-      </RootNavigationContainer>
-    </SafeAreaProvider>
+    <View
+      style={{
+        flex: 1,
+        alignItems: "center",
+        justifyContent: "center",
+        backgroundColor: "white",
+      }}
+    >
+      <Text>Hello world</Text>
+    </View>
   );
 }
