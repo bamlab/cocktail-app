@@ -1,9 +1,8 @@
 import { screen } from "@testing-library/react-native";
 import React from "react";
 import { Text, View } from "react-native";
-
-import { TEST_DEFAULT_DATE } from "#testing/constants";
-import { renderWithProviders } from "#testing/render";
+import { TEST_DEFAULT_DATE } from "testing/constants";
+import { renderWithProviders } from "testing/render";
 
 import App from "./App";
 

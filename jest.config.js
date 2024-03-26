@@ -24,9 +24,9 @@ const config = {
    */
   preset: "jest-expo",
   // test environment setup
-  globalSetup: "<rootDir>/src/testing/jest-globalSetup.ts",
-  setupFiles: ["./src/testing/jest-setup.ts"],
-  setupFilesAfterEnv: ["./src/testing/jest-setupAfterEnv.ts"],
+  globalSetup: "<rootDir>/testing/jest-globalSetup.ts",
+  setupFiles: ["./testing/jest-setup.ts"],
+  setupFilesAfterEnv: ["./testing/jest-setupAfterEnv.ts"],
   clearMocks: true,
   // module resolution
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],

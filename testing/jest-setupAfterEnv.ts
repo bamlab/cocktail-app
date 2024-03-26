@@ -13,7 +13,7 @@ import { TEST_DEFAULT_DATE, TEST_DEFAULT_MATH_RANDOM } from "./constants";
  * BEWARE that your customizations in tests and test suites don't apply to top-level module code (it runs before the `beforeEach`)
  */
 const setupPermanentMocks = () => {
-  // Note: Timezone is set in src/testing/jest-globalSetup.ts (it wouldn't work to set it here)
+  // Note: Timezone is set in testing/jest-globalSetup.ts (it wouldn't work to set it here)
   jest.useFakeTimers({
     // We're not really interested in stopping the microtasks queue, what we want to mock is "timers"
     doNotFake: [

@@ -1,6 +1,5 @@
 import { screen } from "@testing-library/react-native";
-
-import { renderWithProviders } from "#testing/render";
+import { renderWithProviders } from "testing/render";
 
 import { SafeAreaTest } from "./SafeAreaTest";
 
