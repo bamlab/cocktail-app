@@ -1,6 +1,8 @@
 import "expo-dev-client";
 
-import { Text, View } from "react-native";
+import { View } from "react-native";
+import { cocktailMock } from "src/Cocktail.type";
+import { CocktailItem } from "src/CocktailItem.component";
 
 export default function App() {
   return (
@@ -10,9 +12,10 @@ export default function App() {
         alignItems: "center",
         justifyContent: "center",
         backgroundColor: "white",
+        padding: 20,
       }}
     >
-      <Text>Hello world</Text>
+      <CocktailItem item={cocktailMock} />
     </View>
   );
 }
