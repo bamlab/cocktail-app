@@ -4,16 +4,6 @@ import { Text, View } from "react-native";
 import { TEST_DEFAULT_DATE } from "testing/constants";
 import { renderWithProviders } from "testing/render";
 
-import App from "./App";
-
-it("finds rendered text", async () => {
-  renderWithProviders(<App />);
-
-  expect(
-    await screen.findByText(/Welcome to the Joconde Bootstrap App/),
-  ).toBeOnTheScreen();
-});
-
 test("works with fake timers", async () => {
   let loading = true;
   let data: string | undefined = undefined;

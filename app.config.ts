@@ -8,8 +8,8 @@ if (STAGE !== "dev" && STAGE !== "staging" && STAGE !== "production") {
 
 const appConfig_DEV = {
   // build-time configs like bundleId, appName, firebase config file path, etc... live there
-  bundleId: "beerlist.dev",
-  appName: "beerlist DEV",
+  bundleId: "cocktail.dev",
+  appName: "cocktail DEV",
   waitForUpdateOnSplashScreenMs: 0,
   // run-time configs like API URL, feature flags, etc... should be put in `appEnv`. They are accessible from app code
   appEnv: {
@@ -21,15 +21,15 @@ const appConfig_DEV = {
 };
 
 const appConfig_STAGING: typeof appConfig_DEV = {
-  bundleId: "beerlist.staging",
-  appName: "beerlist STAGING",
+  bundleId: "cocktail.staging",
+  appName: "cocktail STAGING",
   waitForUpdateOnSplashScreenMs: 600000, // try to always have the latest expo-update, allow 1 minute for download
   appEnv: appConfig_DEV.appEnv,
 };
 
 const appConfig_PRODUCTION: typeof appConfig_DEV = {
-  bundleId: "beerlist",
-  appName: "beerlist",
+  bundleId: "cocktail",
+  appName: "cocktail",
   waitForUpdateOnSplashScreenMs: 10000,
   appEnv: {
     apiUrl: "https://myapi.com",
@@ -50,8 +50,8 @@ const appConfig = appConfigs[STAGE];
 export type AppEnv = (typeof appConfig_DEV)["appEnv"];
 
 const config: ExpoConfig = {
-  name: "beerlist",
-  slug: "beerlist",
+  name: "cocktail",
+  slug: "cocktail",
   orientation: "portrait",
   icon: "./assets/icon.png",
   userInterfaceStyle: "light",

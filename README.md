@@ -1,4 +1,4 @@
-# Joconde
+# Cocktail
 
 **👋 Welcome! You can follow this document to ensure your environment is setup correctly and discover the tools that are available on the project.**
 
